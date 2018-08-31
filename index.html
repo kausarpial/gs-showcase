@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+  <meta charset="utf-8">
+  <title>Gramstats</title>
+
+  <!-- mobile responsive meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  
+  <!-- Themify -->
+  <link rel="stylesheet" href="plugins/themify-icons/themify-icons.css">
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="plugins/bootstrap/bootstrap.min.css">
+  <!-- AOS -->
+  <link rel="stylesheet" href="plugins/aos/aos.css">
+  <!-- Stylesheets -->
+  <link href="css/style.css" rel="stylesheet">
+  
+  <!--Favicon-->
+  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+</head>
+
+<body>
+  
+
+<!-- Navbar Start -->
+<nav class="main-nav navbar navbar-expand-lg fixed-top">
+    <div class="container-fluid">
+        <!-- Logo -->
+        <a class="navbar-brand page-scroll" href="index.html">
+            <img src="images/logo.png" alt="logo">
+        </a>
+        <div class="buy-likes">
+            <a href="#" class="btn btn-secondary btn-sm font-weight-bold">Buy Likes</a>
+        </div>
+    </div>
+</nav>
+<!-- Navbar End -->
+
+<section class="hero-area">
+    <div class="container mbn-200">
+        <div class="row">
+            <div class="col-md-10 mx-auto">
+                <div class="hero-header text-center">
+                    <h1>Instagram Follower/Hashtag Count</h1>
+                    <p>
+                        Real-time count for Instagram followers and media statistics
+                    </p>
+                </div>
+                <div class="insta-count">
+                    <ul class="nav nav-tabs" id="myTab">
+                        <li class="nav-item">
+                            <a class="nav-link active" id="followers-tab" data-toggle="tab" href="#followers">
+                                <div class="icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="23px" height="23px">
+                                        <path fill-rule="evenodd" d="M15.521,23.000 L10.658,18.371 L11.898,17.069 L15.420,20.423 L21.663,13.472 L23.000,14.673 L15.521,23.000 ZM14.423,10.132 C14.120,10.132 13.824,10.105 13.535,10.054 C13.609,10.397 13.648,10.753 13.648,11.119 C13.648,13.912 11.375,16.184 8.582,16.184 C4.841,16.184 1.797,19.228 1.797,22.969 L-0.000,22.969 C-0.000,19.379 2.216,16.297 5.352,15.019 C4.231,14.089 3.516,12.685 3.516,11.118 C3.516,8.325 5.789,6.053 8.582,6.053 C8.885,6.053 9.182,6.079 9.470,6.131 C9.397,5.787 9.357,5.431 9.357,5.066 C9.357,2.273 11.630,-0.000 14.423,-0.000 C17.217,-0.000 19.489,2.273 19.489,5.066 C19.489,6.633 18.774,8.036 17.653,8.966 C18.983,9.509 20.147,10.375 21.048,11.467 L19.830,12.823 C18.590,11.190 16.628,10.132 14.423,10.132 ZM8.582,7.850 C6.780,7.850 5.313,9.316 5.313,11.118 C5.313,12.921 6.780,14.387 8.582,14.387 C10.384,14.387 11.851,12.921 11.851,11.118 C11.851,9.316 10.384,7.850 8.582,7.850 ZM17.692,5.066 C17.692,3.264 16.226,1.797 14.423,1.797 C12.621,1.797 11.155,3.264 11.155,5.066 C11.155,6.868 12.621,8.335 14.423,8.335 C16.226,8.335 17.692,6.868 17.692,5.066 Z"
+                                        />
+                                    </svg>
+                                </div>
+                                <h5>
+                                    Followers
+                                </h5>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="hashtag-tab" data-toggle="tab" href="#hashtag">
+                                <div class="icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="23px" height="23px">
+                                        <path fill-rule="evenodd" d="M18.413,5.566 L17.944,8.027 L14.326,8.027 L13.330,12.876 L17.051,12.876 L16.582,15.351 L12.847,15.351 L11.675,21.138 L9.155,21.138 L10.327,15.351 L5.889,15.351 L4.717,21.138 L2.226,21.138 L3.384,15.351 L-0.000,15.351 L0.483,12.876 L3.896,12.876 L4.863,8.027 L1.333,8.027 L1.831,5.566 L5.361,5.566 L6.518,-0.000 L9.009,-0.000 L7.895,5.566 L12.319,5.566 L13.462,-0.000 L15.967,-0.000 L14.839,5.566 L18.413,5.566 ZM7.309,7.925 L6.284,12.993 L10.884,12.993 L11.924,7.925 L7.309,7.925 Z"
+                                        />
+                                    </svg>
+                                </div>
+                                <h5>
+                                    Hashtags
+                                </h5>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="tab-content" id="myTabContent">
+                        <div class="tab-pane fade show active" id="followers">
+                            <div class="user-details text-center">
+                                <img src="images/user.jpg" alt="user-image">
+                                <h5 class="username">selenagomez</h5>
+                                <h2 class="followers">843,848,3,646</h2>
+                                <p class="mb-3">Instagram Followers</p>
+                                <a href="#" class="btn btn-primary">Follow User</a>
+                            </div>
+                            <form action="#" class="checkform row">
+                                <div class="col-9">
+                                    <input type="text" class="form-control" placeholder="Type any instagram username or hashtag">
+                                </div>
+                                <div class="col-3">
+                                    <button type="submit" class="btn btn-primary-gradient btn-block">Check</button>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="tab-pane fade" id="hashtag">
+                            <div class="user-details text-center">
+                                <img src="images/user.jpg" alt="user-image">
+                                <h5 class="username">#yourhashtag</h5>
+                                <h2 class="followers">843,848,3,646</h2>
+                                <p class="mb-3">Instagram Followers</p>
+                                <a href="#" class="btn btn-primary">Follow User</a>
+                            </div>
+                            <form action="#" class="checkform row">
+                                <div class="col-9">
+                                    <input type="text" class="form-control" placeholder="Type any instagram username or hashtag">
+                                </div>
+                                <div class="col-3">
+                                    <button type="submit" class="btn btn-primary-gradient btn-block">Check</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section cta">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 mx-auto text-center">
+                <h3 class="cta-tagline">
+                    We have delivered <span>1,000,000</span> likes and are trusted by thousands of customers worldwide.
+                </h3>
+                <a href="#" class="btn btn-primary-gradient">Browse our packages</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="background-shape">
+        <img src="images/backgrounds/footer-bg.png" class="w-100" alt="footer-shape">
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-7 mx-auto">
+                <div class="block">
+                    <h2 class="text-center text-white">
+                        Let's get you 50 free likes!
+                    </h2>
+                    <form action="#" class="footer-form">
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control" placeholder="Type any instagram username or hashtag">
+                            <div class="input-group-append">
+                                <button class="btn btn-primary-gradient" type="submit" id="button-addon2">Go</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="copyright-text text-center">
+                    <p class="mb-0 text-white">
+                        Copyright © 2018. gramstats
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- jQuery -->
+<script src="plugins/jQuery/jquery.min.js"></script>
+<!-- Bootstrap JS -->
+<script src="plugins/bootstrap/bootstrap.min.js"></script>
+<!-- AOS -->
+<script src="plugins/aos/aos.js"></script>
+<!-- Main Script -->
+<script src="js/script.js"></script>
+</body>
+</html>

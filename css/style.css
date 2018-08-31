@@ -1,0 +1,261 @@
+/*!------------------------------------------------------------------
+[MAIN STYLESHEET]
+
+PROJECT:	Gramstats
+VERSION:	1.0.0
+-------------------------------------------------------------------*/
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700");
+body {
+  line-height: 1.2;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+}
+
+p {
+  letter-spacing: .5px;
+  color: #777777;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #000;
+  font-weight: 700;
+}
+
+h1, .h1 {
+  font-size: 54px;
+}
+
+h2, .h2 {
+  font-size: 46px;
+}
+
+h3, .h3 {
+  font-size: 40px;
+}
+
+h4, .h4 {
+  font-size: 23px;
+}
+
+h5, .h5 {
+  font-size: 19px;
+}
+
+h6, .h6 {
+  font-size: 16px;
+}
+
+.btn {
+  font-size: 16px;
+  border-radius: 0;
+  padding: 18px 55px;
+  border: none;
+  letter-spacing: 1px;
+  border-radius: 4px;
+}
+
+.btn-primary {
+  background: #32a0ff;
+  color: #fff;
+  position: relative;
+  z-index: 1;
+}
+
+.btn-primary-gradient {
+  background-image: linear-gradient(90deg, #ff9e67 0%, #ff5082 100%);
+  color: #fff;
+  position: relative;
+  z-index: 1;
+}
+
+.btn-primary-gradient:hover {
+  color: #fff;
+  box-shadow: 0px 32px 44px 0px rgba(0, 0, 0, 0.05);
+}
+
+.btn-secondary {
+  background-color: #454fce;
+  font-size: 14px;
+}
+
+.btn-sm {
+  padding: 15px 28px;
+}
+
+body {
+  background: #fbfdff;
+}
+
+.section {
+  padding: 100px 0;
+}
+
+.section-title {
+  margin-bottom: 50px;
+}
+
+.section-title h2 {
+  margin-bottom: 30px;
+}
+
+.section-title p {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.mbn-200 {
+  transform: translateY(200px);
+}
+
+.form-control {
+  padding: 18px 20px;
+}
+
+.cta-tagline {
+  font-size: 30px;
+  margin-bottom: 45px;
+}
+
+.cta-tagline span {
+  color: #f65d67;
+}
+
+.main-nav {
+  padding: 30px 25px;
+  transition: .5s ease;
+}
+
+.main-nav.nav-bg {
+  padding: 20px;
+  background: #1727CE;
+}
+
+.hero-area {
+  background-image: url("../images/backgrounds/header-bg.png");
+  background-size: cover;
+  background-position: bottom center;
+  padding: 30px 0 0;
+  margin-bottom: 200px;
+}
+
+.hero-header {
+  margin-bottom: 70px;
+}
+
+.hero-header h1, .hero-header p {
+  color: #fff;
+}
+
+.hero-header p {
+  font-size: 23px;
+}
+
+.insta-count {
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 0px 32px 44px 0px rgba(0, 0, 0, 0.05);
+  padding: 20px 55px 70px;
+}
+
+.insta-count ul.nav-tabs {
+  display: -ms-flexbox;
+  display: flex;
+  border-bottom: 2px solid #d7d7d7;
+}
+
+.insta-count ul.nav-tabs .nav-item {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  text-align: center;
+}
+
+.insta-count ul.nav-tabs .nav-item .nav-link {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+  padding: 20px 0;
+  border-radius: 0;
+}
+
+.insta-count ul.nav-tabs .nav-item .nav-link h5 {
+  margin-bottom: 0;
+  margin-left: 10px;
+  color: #777777;
+  font-weight: 400;
+}
+
+.insta-count ul.nav-tabs .nav-item .nav-link .icon svg {
+  fill: #777777;
+}
+
+.insta-count ul.nav-tabs .nav-item .nav-link.active {
+  border-width: 0 0 2px 0;
+  border-color: #000;
+  border-style: solid;
+  transform: translateY(1px);
+}
+
+.insta-count ul.nav-tabs .nav-item .nav-link.active h5 {
+  color: #262626;
+}
+
+.insta-count ul.nav-tabs .nav-item .nav-link.active .icon svg {
+  fill: #262626;
+}
+
+.insta-count ul.nav-tabs .nav-item .nav-link:hover {
+  border-width: 0 0 2px 0;
+  border-color: #000;
+  border-style: solid;
+  transform: translateY(1px);
+}
+
+.insta-count .user-details {
+  margin-top: 55px;
+  margin-bottom: 70px;
+}
+
+.insta-count .user-details img {
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.insta-count .user-details .username {
+  margin-bottom: 35px;
+}
+
+.insta-count .checkform {
+  padding: 0 50px;
+}
+
+.footer {
+  position: relative;
+  padding: 250px 0 45px;
+}
+
+.footer .background-shape {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  z-index: -1;
+}
+
+.footer .block h2 {
+  margin-bottom: 35px;
+}
+
+.footer .footer-form {
+  margin-bottom: 80px;
+}
+
+.footer .footer-form .input-group {
+  box-shadow: 0px 32px 44px 0px rgba(0, 0, 0, 0.2);
+}
+
+/*# sourceMappingURL=maps/style.css.map */
