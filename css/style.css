@@ -115,12 +115,39 @@ body {
           transform: translateY(200px);
 }
 
+@media (max-width: 1200px) {
+  .mbn-200 {
+    -webkit-transform: translateY(100px);
+            transform: translateY(100px);
+  }
+}
+
+@media (max-width: 991px) {
+  .mbn-200 {
+    -webkit-transform: translateY(50px);
+            transform: translateY(50px);
+  }
+}
+
+@media (max-width: 767px) {
+  .mbn-200 {
+    -webkit-transform: translateY(25px);
+            transform: translateY(25px);
+  }
+}
+
 .form-control {
   padding: 18px 20px;
 }
 
 .cta {
   padding-top: 100px;
+}
+
+@media (max-width: 767px) {
+  .cta {
+    padding-top: 50px;
+  }
 }
 
 .cta-tagline {
@@ -132,9 +159,21 @@ body {
   color: #f65d67;
 }
 
+@media (max-width: 400px) {
+  .cta-tagline {
+    font-size: 25px;
+  }
+}
+
 .main-nav {
   padding: 30px 25px;
   transition: .5s ease;
+}
+
+@media (max-width: 400px) {
+  .main-nav {
+    padding: 10px;
+  }
 }
 
 .main-nav.nav-bg {
@@ -149,8 +188,32 @@ body {
   margin-bottom: 200px;
 }
 
+@media (max-width: 1200px) {
+  .hero-area {
+    margin-bottom: 100px;
+  }
+}
+
+@media (max-width: 991px) {
+  .hero-area {
+    margin-bottom: 50px;
+  }
+}
+
+@media (max-width: 767px) {
+  .hero-area {
+    margin-bottom: 25px;
+  }
+}
+
 .hero-header {
   margin-bottom: 70px;
+}
+
+@media (max-width: 991px) {
+  .hero-header {
+    margin-bottom: 40px;
+  }
 }
 
 .hero-header h1, .hero-header p {
@@ -161,6 +224,36 @@ body {
   font-size: 23px;
 }
 
+@media (max-width: 991px) {
+  .hero-header p {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 575px) {
+  .hero-header p {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 991px) {
+  .hero-header h1 {
+    font-size: 45px;
+  }
+}
+
+@media (max-width: 575px) {
+  .hero-header h1 {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 400px) {
+  .hero-header h1 {
+    font-size: 25px;
+  }
+}
+
 .insta-count {
   background: #fff;
   border-radius: 4px;
@@ -168,9 +261,32 @@ body {
   padding: 20px 55px 70px;
 }
 
+@media (max-width: 1200px) {
+  .insta-count {
+    padding: 20px 30px 70px;
+  }
+}
+
+@media (max-width: 400px) {
+  .insta-count {
+    padding: 10px 20px 50px;
+  }
+}
+
 .insta-count ul.nav-tabs {
   display: flex;
-  border-bottom: 2px solid #d7d7d7;
+  border-bottom: 0;
+  position: relative;
+}
+
+.insta-count ul.nav-tabs::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 4px;
+  background-color: #d8d8d8;
+  border-radius: 4px;
 }
 
 .insta-count ul.nav-tabs .nav-item {
@@ -184,6 +300,8 @@ body {
   justify-content: center;
   padding: 20px 0;
   border-radius: 0;
+  border-width: 0;
+  position: relative;
 }
 
 .insta-count ul.nav-tabs .nav-item .nav-link h5 {
@@ -191,18 +309,49 @@ body {
   margin-left: 10px;
   color: #777777;
   font-weight: 400;
+  transition: .3s ease;
+}
+
+@media (max-width: 400px) {
+  .insta-count ul.nav-tabs .nav-item .nav-link h5 {
+    font-size: 14px;
+  }
 }
 
 .insta-count ul.nav-tabs .nav-item .nav-link .icon svg {
   fill: #777777;
+  transition: .3s ease;
+}
+
+.insta-count ul.nav-tabs .nav-item .nav-link::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  background: #000;
+  border-radius: 4px;
+  left: 0;
+  bottom: 1px;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transform-origin: right;
+          transform-origin: right;
+  transition: -webkit-transform .3s ease-in-out;
+  transition: transform .3s ease-in-out;
+  transition: transform .3s ease-in-out, -webkit-transform .3s ease-in-out;
 }
 
 .insta-count ul.nav-tabs .nav-item .nav-link.active {
-  border-width: 0 0 2px 0;
-  border-color: #000;
-  border-style: solid;
-  -webkit-transform: translateY(1px);
-          transform: translateY(1px);
+  background-color: transparent;
+  border-width: 0;
+  position: relative;
+}
+
+.insta-count ul.nav-tabs .nav-item .nav-link.active::before {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+  -webkit-transform-origin: left;
+          transform-origin: left;
 }
 
 .insta-count ul.nav-tabs .nav-item .nav-link.active h5 {
@@ -214,11 +363,7 @@ body {
 }
 
 .insta-count ul.nav-tabs .nav-item .nav-link:hover {
-  border-width: 0 0 2px 0;
-  border-color: #000;
-  border-style: solid;
-  -webkit-transform: translateY(1px);
-          transform: translateY(1px);
+  border-width: 0;
 }
 
 .insta-count .user-details {
@@ -231,12 +376,73 @@ body {
   margin-bottom: 10px;
 }
 
+@media (max-width: 575px) {
+  .insta-count .user-details h2 {
+    font-size: 30px;
+  }
+}
+
 .insta-count .user-details .username {
   margin-bottom: 35px;
 }
 
 .insta-count .checkform {
   padding: 0 50px;
+}
+
+@media (max-width: 1200px) {
+  .insta-count .checkform {
+    padding: 0;
+  }
+}
+
+@media (max-width: 991px) {
+  .insta-count .checkform input {
+    text-align: center;
+  }
+}
+
+@media (max-width: 575px) {
+  .insta-count .checkform input {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 991px) {
+  .insta-count .checkform button {
+    margin-top: 15px;
+  }
+}
+
+.insta-count .tab-pane.active .fade-up-animation {
+  -webkit-animation: fading-anim .7s ease;
+          animation: fading-anim .7s ease;
+}
+
+@-webkit-keyframes fading-anim {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(40px);
+            transform: translateY(40px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes fading-anim {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(40px);
+            transform: translateY(40px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
 }
 
 .footer {
@@ -246,6 +452,12 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top center;
+}
+
+@media (max-width: 991px) {
+  .footer {
+    padding: 200px 0 45px;
+  }
 }
 
 .footer .background-shape {
@@ -259,12 +471,30 @@ body {
   margin-bottom: 35px;
 }
 
+@media (max-width: 575px) {
+  .footer .block h2 {
+    font-size: 30px;
+  }
+}
+
 .footer .footer-form {
   margin-bottom: 80px;
 }
 
+@media (max-width: 575px) {
+  .footer .footer-form {
+    margin-bottom: 50px;
+  }
+}
+
 .footer .footer-form .input-group {
   box-shadow: 0px 32px 44px 0px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 575px) {
+  .footer .footer-form input {
+    font-size: 12px;
+  }
 }
 
 /*# sourceMappingURL=maps/style.css.map */
